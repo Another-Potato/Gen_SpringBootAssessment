@@ -1,22 +1,23 @@
 package org.generation.SpringBootAssessment.controller.dto;
 
+import java.sql.Date;
 public class TaskDTO {
 
     private String title;
     private String description;
-    private String targetDeadline;
+    private Date target;
 
-    public TaskDTO(String title, String description, String targetDeadline) {
+    public TaskDTO(String title, String description, Date targetDeadline) {
         this.title = title;
         this.description = description;
-        this.targetDeadline = targetDeadline;
+        this.target = targetDeadline;
     }
 
     public String getTitle() {return title;}
     public String getDescription() {return description;}
-    public String getTargetDeadline() {return targetDeadline;}
+    public Date getTargetDeadline() {return target;}
 
     public void setTitle(String title) {this.title = title;}
     public void setDescription(String description) {this.description = description;}
-    public void setTargetDeadline(String targetDeadline) {this.targetDeadline = targetDeadline;}
+    public void setTargetDeadline(Date targetDeadline) {this.target = targetDeadline;}
 }
