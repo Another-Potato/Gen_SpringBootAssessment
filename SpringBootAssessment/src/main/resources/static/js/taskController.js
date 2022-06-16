@@ -36,7 +36,6 @@ class TasksController {
 
     displayTasks(){
         let taskController = this;
-        let tasks = [];
 
         fetch('http://127.0.0.1:8080/task/all')
             .then((resp) => resp.json())
